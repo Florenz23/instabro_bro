@@ -10,6 +10,7 @@ insta_password = 'asdfasdf'
 try:
     session = InstaPy(username=insta_username,
                       password=insta_password,
+                      headless_browser=True,
                       nogui=True,
                       multi_logs=True)
     session.login()
@@ -22,7 +23,7 @@ try:
     session.set_dont_like(['pizza', 'girl'])
 
     # actions
-    session.like_by_tags(['natgeo'], amount=1)
+    session.like_by_tags(['natgeo'], amount=5)
 
 finally:
     # end the bot session
