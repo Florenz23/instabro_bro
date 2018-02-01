@@ -10,8 +10,7 @@ insta_password = 'asdfasdf'
 try:
     session = InstaPy(username=insta_username,
                       password=insta_password,
-                      headless_browser=True,
-                      # nogui=True,
+                      nogui=True,
                       multi_logs=True)
     session.login()
 
