@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from instapy import InstaPy
 
 insta_username = 'angelina___666_01'
@@ -8,7 +11,7 @@ try:
     session = InstaPy(username=insta_username,
                       password=insta_password,
                       headless_browser=True,
-                      nogui=True,
+                      # nogui=True,
                       multi_logs=True)
     session.login()
 
